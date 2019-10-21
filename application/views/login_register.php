@@ -37,18 +37,17 @@
                 <div class="card-heading"></div>
                 <div class="card-body" id="register">
                     <h2 class="title">Registration</h2>
-                    <form method="POST">
+                    <form method="POST" action="<?php echo site_url('doabundo/register');?>">
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Name" name="name">
+                            <input class="input--style-2" type="text" placeholder="Username" name="username">
                         </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <input class="input--style-2 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                </div>
-                            </div>
-                            <div class="col-2">
+                        <div class="input-group">
+                            <input class="input--style-2" type="password" placeholder="Password" name="password">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="password" placeholder="Confirm Password" name="c_password">
+                        </div>
+                        <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
                                         <select name="gender">
@@ -60,16 +59,25 @@
                                     </div>
                                 </div>
                             </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Alamat" name="alamat">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Username" name="username">
+                            <input class="input--style-2" type="text" placeholder="Email Address" name="email">
+                        </div>
+                        <div class="row row-space">
+                            <!-- <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
+                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                </div>
+                            </div> -->
+                            
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="password" placeholder="Password" name="password">
+                            <input class="input--style-2" type="text" placeholder="No HP" name="hp">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-2" type="password" placeholder="Confirm Password" name="c_password">
-                        </div>
+                        
                         <div class="p-t-30">
                             <button class="btn btn--radius btn--green" type="submit">Register</button>
                             <a href="#" class="signup-image-link" id="tologin">I am already member</a>
@@ -78,15 +86,15 @@
                 </div>
                 <div class="card-body" id="login">
                     <h2 class="title">Login</h2>
-                    <form method="POST">
+                    <form method="post" action="<?php echo site_url('login/verify');?>">
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Username" name="name">
+                            <input class="input--style-2" type="text" placeholder="Username" name="username">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="password" placeholder="Password" name="name">
+                            <input class="input--style-2" type="password" placeholder="Password" name="password">
                         </div>
                         <div class="p-t-30">
-                            <button class="btn btn--radius btn--green" type="submit"><a href="<?php echo site_url('doabundo/dashboard'); ?>">Login</a></button>
+                            <button class="btn btn--radius btn--green" type="submit">Login</button>
                             <a href="#" class="signup-image-link" id="toregister">I am not already member</a>
                         </div>
                     </form>
@@ -108,7 +116,7 @@
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 <script type="text/javascript">
-        $('#login').hide();
+        $('#register').hide();
         $("#tologin").on("click",function() {
           $('#login').fadeOut('slow');
           $('#register').fadeOut('slow');
