@@ -10,7 +10,8 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Katering Doabundo</title>
+    <title>Doabundo</title>
+    <link href="<?php echo base_url(); ?>assets/images/logo_home.png" rel="shortcut icon"/>
 
     <!-- Icons font CSS-->
     <link href="<?php echo base_url(); ?>assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
