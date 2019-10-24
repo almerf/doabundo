@@ -1,7 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class User_Profile_Controller extends CI_Controller {
+		public function __construct()
+	{
+		parent::__construct();
+
+		$this->load->database();
+		$this->load->helper('url');
+		$this->load->model('User_Profile_Model');
+
+	}
 
 	/**
 	 * Index Page for this controller.
@@ -20,6 +29,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+    	$this->load->model('User_Profile_Model');
+		$this->load->view('biodata');
 	}
 }

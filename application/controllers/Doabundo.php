@@ -14,7 +14,12 @@ class Doabundo extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('login_register');
+		if ($this->session->userdata('user')) {
+			redirect('dashboard');
+		} 
+		else {
+			redirect('login');
+		}
 	}
 
 	public function dashboard()
@@ -42,4 +47,25 @@ class Doabundo extends CI_Controller {
 				echo "Data Gagal disimpan";
 		}
 	}
+
+	public function paket_makanan()
+	{
+		$this->load->view('v_paket_makanan');
+	}
+
+	public function makanan_minuman()
+	{
+		$this->load->view('v_makanan_minuman');
+	}
+
+	public function notifikasi()
+	{
+		$this->load->view('v_notifikasi');
+	}
+
+	public function cart()
+	{
+		$this->load->view('v_cart');
+	}
+	
 }

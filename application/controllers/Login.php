@@ -10,6 +10,7 @@ class Login extends CI_Controller {
 		$this->load->model('Bundo_model');
 
 		if ($this->session->userdata('user')) {
+			redirect('dashboard');
 		}
 
 	}
