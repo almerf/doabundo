@@ -20,8 +20,11 @@
 	                <div>
 	                	Harga: Rp.12.000
 	                </div>
+	                <!-- <div class="tersedia">
+	                	Stock: <span style="color: green;">Tersedia</span>
+	                </div> -->
 	                <div class="tersedia">
-	                	Stock: Tersedia
+	                	Stock: <span style="color: red;">Tidak Tersedia</span>
 	                </div>
 	                <div class="col-lg-12 row">
 	                	<div class="col-lg-4 jumlah">
