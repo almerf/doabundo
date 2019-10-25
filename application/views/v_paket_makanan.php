@@ -1,6 +1,6 @@
 <?php $this->load->view('partials/header'); ?>
 
-	<section class="top-letest-product-section bg-gray">
+	<section class="top-letest-product-section bg-gray-dash">
 		<div class="container">
 			<div class="section-title-mid">
 				<h2>Paket Makanan</h2>
@@ -63,11 +63,9 @@
 						</div>
 					</div>
 		</div>
-	</section>
+		<br>
 	<!-- letest product section end -->
 
-	<section class="top-letest-product-section bg-gray">
-		<div class="container">
 			<div class="section-title-mid">
 			</div>
 			<div class="product-slider owl-carousel">

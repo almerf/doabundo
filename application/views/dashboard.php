@@ -23,7 +23,7 @@
 				<h2>Paket Populer</h2>
 			</div>
 			<div class="product-slider owl-carousel">
-				<div class="product-item">
+				<div class="product-item" style="cursor: pointer;" onclick="window.location='<?php echo site_url('doabundo/detail_paket'); ?>'">
 					<div class="pi-pic">
 						<img src="<?php echo base_url(); ?>assets/images/paket_makanan.png" alt="">
 						<div class="pi-links">
@@ -91,7 +91,7 @@
 				<h2>Makanan dan Minuman Populer</h2>
 			</div>
 			<div class="product-slider owl-carousel">
-				<div class="product-item">
+				<div class="product-item" style="cursor: pointer;" onclick="window.location='<?php echo site_url('doabundo/detail_makanan_minuman'); ?>'">
 					<div class="pi-pic">
 						<img src="<?php echo base_url(); ?>assets/images/paket_makanan.png" alt="">
 						<div class="pi-links">

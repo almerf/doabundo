@@ -22,11 +22,6 @@ class Doabundo extends CI_Controller {
 		}
 	}
 
-	public function dashboard()
-	{
-		$this->load->view('dashboard');
-	}
-
 	public function register()
 	{
 		if ($this->input->post()) {
@@ -68,4 +63,18 @@ class Doabundo extends CI_Controller {
 		$this->load->view('v_cart');
 	}
 	
+	public function hasil_pencarian()
+	{
+		$this->load->view('v_hasil_pencarian');
+	}
+
+	public function detail_paket()
+	{
+		$this->load->view('v_detail_paket');
+	}
+
+	public function detail_makanan_minuman()
+	{
+		$this->load->view('v_detail_makanan_minuman');
+	}
 }

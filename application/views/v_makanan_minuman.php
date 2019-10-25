@@ -1,6 +1,6 @@
 <?php $this->load->view('partials/header'); ?>
 
-<section class="top-letest-product-section bg-gray">
+<section class="top-letest-product-section bg-gray-dash">
 
 		<div class="section-title-mid">
 			<h2>Makanan & Minuman</h2>
@@ -67,11 +67,8 @@
 						</div>
 					</div>
 		</div>
-	</section>
+		<br>
 	<!-- letest product section end -->
-
-	<section class="top-letest-product-section bg-gray">
-		<div class="container">
 			<div class="section-title-left">
 				<h2>Minuman</h2>
 			</div>

@@ -24,7 +24,6 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/owl.carousel.min.css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css"/>
-	
 
 	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -51,7 +50,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-lg-2 search">
-						<form class="header-search-form">
+						<form class="header-search-form" action="<?php echo site_url('doabundo/hasil_pencarian'); ?>">
 							<input type="text" placeholder="Cari makanan disini...">
 							<button><i class="flaticon-search"></i></button>
 						</form>
