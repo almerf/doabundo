@@ -69,9 +69,9 @@
 								<a href="#" class="account"><img src="<?php echo base_url(); ?>assets/images/1.jpg" class="profile-circle"/></a>
 								<div class="submenu" style="display: none; ">
 									<ul class="root">
-										<li><a href="#">Dashboard</a></li>
-										<li><a href="#">Profile</a></li>
-										<li><a href="#">Settings</a></li>
+										<li><a href="<?php echo site_url(); ?>">Dashboard</a></li>
+										<!-- <li><a href="#">Profile</a></li> -->
+										<li><a href="<?php echo site_url('User_Profile_Controller'); ?>">Profiles</a></li>
 										<li><a href="<?php echo site_url('logout'); ?>">Sign Out</a></li>
 									</ul>
 								</div>
