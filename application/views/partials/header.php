@@ -9,7 +9,7 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<!-- Favicon -->
 	<link href="<?php echo base_url(); ?>assets/images/logo_home.png" rel="shortcut icon"/>
-	
+
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -70,14 +70,14 @@
 								<div class="submenu" style="display: none; ">
 									<ul class="root">
 										<li><a href="#">Dashboard</a></li>
-										<li><a href="#">Profile</a></li>
+										<li><a href="<?php echo site_url('User_Profile_Controller/index'); ?>">Profile</a></li>
 										<li><a href="#">Settings</a></li>
 										<li><a href="<?php echo site_url('logout'); ?>">Sign Out</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>

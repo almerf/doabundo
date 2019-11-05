@@ -29,7 +29,9 @@ class User_Profile_Controller extends CI_Controller {
 	 */
 	public function index()
 	{
-    	$this->load->model('User_Profile_Model');
+    $this->load->model('User_Profile_Model');
+		$this->load->view('partials/header');
 		$this->load->view('biodata');
+		$this->load->view('partials/footer');
 	}
 }
