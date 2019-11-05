@@ -58,7 +58,7 @@ class Doabundo extends CI_Controller {
 		$this->load->view('v_notifikasi');
 	}
 
-	public function cart()
+	public function cart() #Jadikan Controller
 	{
 		$this->load->view('v_cart');
 	}
