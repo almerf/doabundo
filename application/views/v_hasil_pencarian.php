@@ -1,4 +1,14 @@
 <?php $this->load->view('partials/header'); ?>
+<?php echo $data?>
+
+<?php
+#	foreach($data as $key) {
+#				echo '<option value="' . $key ;
+#				#echo $valuee;
+#		}
+?>
+
+
 
 <section class="top-letest-product-section bg-gray">
 	<div class="container">

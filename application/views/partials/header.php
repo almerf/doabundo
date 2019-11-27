@@ -48,11 +48,11 @@
 						<a href="<?php echo base_url(); ?>" class="site-logo">
 							<img src="<?php echo base_url(); ?>assets/images/logo_home.png" alt="">
 						</a>
-					</div>
-					<div class="col-xl-6 col-lg-2 search">
-						<form class="header-search-form" action="<?php echo site_url('doabundo/hasil_pencarian'); ?>">
-							<input type="text" placeholder="Cari makanan disini...">
-							<button><i class="flaticon-search"></i></button>
+					</div> <?php #echo site_url('doabundo/hasil_pencarian'); ?>
+					<div class="col-xl-6 col-lg-2 search"> <?php #echo site_url('User_Profile_Controller/index'); ?>
+						<form class="header-search-form" method="POST" action="<?php echo site_url('Search/index'); ?>">
+							<input type="text" placeholder="Cari makanan disini..." name=itemName>
+							<button><i class="flaticon-search" type=submit></i></button>
 						</form>
 					</div>
 					<div class="col-xl-4 col-lg-8 test">

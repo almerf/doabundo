@@ -1,8 +1,18 @@
 
 	<?php #echo $this->session->userdata('user'); ?>
 	<?php
-		$userdata = $this->User_Profile_Model->getBiodata('cecep');
+	#	$userdata = $this->User_Profile_Model->getBiodata('cecep');
 		#echo $userdata['username'];
+
+	?>
+
+	<?php
+		foreach($_SESSION as $key=>$value) {
+			$tem_arr = $value;
+			$userdata = $this->User_Profile_Model->getBiodata($value['username']);
+					#echo $valuee;
+			}
+
 
 	?>
 

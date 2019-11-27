@@ -16,7 +16,7 @@ class Doabundo extends CI_Controller {
 	{
 		if ($this->session->userdata('user')) {
 			redirect('dashboard');
-		} 
+		}
 		else {
 			redirect('login');
 		}
@@ -25,7 +25,7 @@ class Doabundo extends CI_Controller {
 	public function register()
 	{
 		if ($this->input->post()) {
-			
+
 			$data['username'] = $this->input->post('username');
 			$data['password'] = $this->input->post('password');
 			$data['alamat'] = $this->input->post('alamat');
@@ -34,8 +34,8 @@ class Doabundo extends CI_Controller {
 			$data['kontak'] = $this->input->post('hp');
 
 			$id = $this->Bundo_model->register($data);
-			
-			if ($id){ 
+
+			if ($id){
 				redirect('Doabundo');
 			}
 			else
@@ -62,7 +62,7 @@ class Doabundo extends CI_Controller {
 	{
 		$this->load->view('v_cart');
 	}
-	
+
 	public function hasil_pencarian()
 	{
 		$this->load->view('v_hasil_pencarian');

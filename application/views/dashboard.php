@@ -1,5 +1,4 @@
 <?php $this->load->view('partials/header'); ?>
-
 	<section class="top-letest-product-section bg-gray-dash">
 		<div class="container">
 			<div class="row d-flex justify-content-between">
