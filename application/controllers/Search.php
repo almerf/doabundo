@@ -13,8 +13,8 @@ class Search extends CI_Controller {
 	}
 	public function search($item_search)
 	{
-		
-		return "ajhdfgasjdgasdjkagdjasgdajdgasjkdg";
+
+		return $this->Search_Menu_model->get_data($item_search);
 	}
 
 

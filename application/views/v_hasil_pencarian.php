@@ -1,11 +1,23 @@
 <?php $this->load->view('partials/header'); ?>
-<?php echo $data?>
+<?php# echo $data?>
 
 <?php
-#	foreach($data as $key) {
+#foreach($data as $arra => $dt) {
+	#echo $arra;
+#	echo 'Test : '.$arra.'-----------<br>';
+#	foreach ($dt as $datttta) {
+		#foreach ($row as $key => $value) {
+		#	echo '<option value="' . $row ;
+			#echo $var;
+#			echo "data : ".$datttta."<br>";
+		#}
+#	}
+#}
+
+#	foreach($data as $key=>$value) {
 #				echo '<option value="' . $key ;
-#				#echo $valuee;
-#		}
+	#			echo $value;
+		#}
 ?>
 
 
@@ -19,93 +31,47 @@
 
 		<!-- card -->
 		<div class="row" >
-			<div class="col-lg-3" style="margin-bottom: 30px; cursor: pointer;">
-	                <div class="card">
-	                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/makanan/nasi_katsu.png">
-	                    <div class="card-block">
-	                        <h5 class="text-bold">Nasi Katsu</h5>
-	                        <div class="rating">
-	                        	<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-	                        </div>
-	                        <h5>Rp. 15.000</h5>
-	                    </div>
-	                </div>
-	        </div>
-	        <br>
+		<?php for ($x = 0; $x <= sizeof($data)-1; $x++) : ?>
+					<div class="col-lg-3" style="margin-bottom: 30px; cursor: pointer;">
+											<div class="card">
+													<img class="card-img-top" src="<?php echo base_url(); ?>assets/images/makanan/nasi_katsu.png">
+													<div class="card-block">
+															<h5 class="text-bold"><?php echo $data[$x]['nama']?></h5>
+															<div class="rating">
+										<?php for ($star = 0; $star <= ceil($data[$x]['rating'])-1; $star++) :?>
+										<span class="fa fa-star checked"></span>
+										<?php endfor; ?>
+															</div>
+															<h5><?php echo 'Rp.'.$data[$x]['harga']?></h5>
+													</div>
+											</div>
+							</div>
+							<br>
 
-	        <div class="col-lg-3" style="margin-bottom: 30px; cursor: pointer;">
-	                <div class="card">
-	                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/makanan/nasi_katsu.png">
-	                    <div class="card-block">
-	                        <h5 class="text-bold">Nasi Katsu</h5>
-	                        <div class="rating">
-	                        	<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-	                        </div>
-	                        <h5>Rp. 15.000</h5>
-	                    </div>
-	                </div>
-	        </div>
+		<?php endfor; ?>
+						</div>
+		<?php
 
-	        <div class="col-lg-3" style="margin-bottom: 30px; cursor: pointer;">
-	                <div class="card">
-	                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/makanan/nasi_katsu.png">
-	                    <div class="card-block">
-	                        <h5 class="text-bold">Nasi Katsu</h5>
-	                        <div class="rating">
-	                        	<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-	                        </div>
-	                        <h5>Rp. 15.000</h5>
-	                    </div>
-	                </div>
-	        </div>
 
-	        <div class="col-lg-3" style="margin-bottom: 30px; cursor: pointer;">
-	                <div class="card">
-	                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/makanan/nasi_katsu.png">
-	                    <div class="card-block">
-	                        <h5 class="text-bold">Nasi Katsu</h5>
-	                        <div class="rating">
-	                        	<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-	                        </div>
-	                        <h5>Rp. 15.000</h5>
-	                    </div>
-	                </div>
-	        </div>
 
-	        <div class="col-lg-3" style="margin-bottom: 30px; cursor: pointer;">
-	                <div class="card">
-	                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/makanan/nasi_katsu.png">
-	                    <div class="card-block">
-	                        <h5 class="text-bold">Nasi Katsu</h5>
-	                        <div class="rating">
-	                        	<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-	                        </div>
-	                        <h5>Rp. 15.000</h5>
-	                    </div>
-	                </div>
-	        </div>
+		#foreach($data as $arra => $dt) {
+			#echo $arra;
+		#	echo 'Test : '.$arra.'-----------<br>';
+		#	foreach ($dt as $datttta) {
+				#foreach ($row as $key => $value) {
+				#	echo '<option value="' . $row ;
+					#echo $var;
+		#			echo "data : ".$datttta."<br>";
+				#}
+		#	}
+		#}
 
-        </div>
+		#	foreach($data as $key=>$value) {
+		#				echo '<option value="' . $key ;
+			#			echo $value;
+				#}
+		?>
+
 	</div>
 </section>
 
