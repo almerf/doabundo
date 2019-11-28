@@ -41,6 +41,9 @@
 										<?php for ($star = 0; $star <= ceil($data[$x]['rating'])-1; $star++) :?>
 										<span class="fa fa-star checked"></span>
 										<?php endfor; ?>
+										<?php for ($star = 0; $star <= 5-ceil($data[$x]['rating'])-1; $star++) :?>
+										<span class="fa fa-star checked " style="color:gray"></span>
+										<?php endfor; ?>
 															</div>
 															<h5><?php echo 'Rp.'.$data[$x]['harga']?></h5>
 													</div>
